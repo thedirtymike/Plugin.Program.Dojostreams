@@ -177,12 +177,12 @@ class Restore:
             except:
                 pass
                           
-        # binaries_done = self._binaries()
         db.force_check_updates(over=True)
         
-        # if not binaries_done:
-            # dialog.ok(CONFIG.ADDONTITLE, '[COLOR {0}]There was an error while restoring. The build may not function correctly.[/COLOR]'.format(CONFIG.COLOR2))
-            
+        binarytxt = os.path.join(CONFIG.USERDATA, 'build_binaries.txt')
+        if os.path.exists(binarytxt):
+            dialog.ok(CONFIG.ADDONTITLE, '[COLOR {0}]The restored build contains platform-specific addons, which will be automatically installed the next time Kodi boots. A number of dialogs may pop up during this process. Cancelling them may cause the restored build to function incorrectly.[/COLOR]'.format(CONFIG.COLOR2))
+    
         tools.kill_kodi(msg='[COLOR {0}]To save changes, Kodi needs to be force closed. Would you like to continue?[/COLOR]'.format(CONFIG.COLOR2))
 
     def _choose(self, loc):
