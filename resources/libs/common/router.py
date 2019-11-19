@@ -65,6 +65,9 @@ def dispatch(paramstring):
     elif mode == 'buildpreview':  # Builds -> Build Preview
         from resources.libs.gui.build_menu import BuildMenu
         BuildMenu().build_video(name)
+    elif mode == 'restorebinaries':
+        from resources.libs.restore import Restore
+        Restore().binaries()
     elif mode == 'install':  # Builds -> Fresh Install/Standard Install/Apply guifix
         from resources.libs.wizard import Wizard
         

@@ -55,7 +55,7 @@ class Restore:
             from resources.libs import install
             install.wipe()
         
-    def binaries(self):
+    def binaries(self, binaryids=None):
         from resources.libs import db
         from resources.libs import install
         from resources.libs.common import logging
@@ -65,10 +65,10 @@ class Restore:
         binarytxt = os.path.join(CONFIG.USERDATA, 'build_binaries.txt')
         
         restore = False
-        binaryids = []
         
-        if os.path.exists(binarytxt):
-            binaryids = tools.read_from_file(binarytxt).split(',')
+        if os.path.exists(binarytxt) or binaryids is not None:
+            if binaryids is None:
+                binaryids = tools.read_from_file(binarytxt).split(',')
             
             # dialog.ok(CONFIG.ADDONTITLE, '[COLOR {0}]The restored backup may depend on the following platform-specific addons, which were not included:[/COLOR]'.format(CONFIG.COLOR2), '[COLOR {0}]{1}[/COLOR]'.format(CONFIG.COLOR1, ', '.join([tools.get_addon_info(id, 'name') for id in binaryids])), '[COLOR {0}]For best results, consider installing them manually after Kodi restarts.[/COLOR]'.format(CONFIG.COLOR2))
             
