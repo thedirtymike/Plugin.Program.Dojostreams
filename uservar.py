@@ -17,7 +17,7 @@ ADDONTITLE = '[COLOR limegreen][B]dojo[/B][/COLOR]streams'
 BUILDERNAME = 'dirtymike'
 EXCLUDES = [ADDON_ID, 'repository.openwizard']
 # Text File with build info in it.
-BUILDFILE = 'http://192.168.100.138:8080/share.cgi?ssid=0PiZXne'
+BUILDFILE = 'http://fieldstoneinspections.com/kodi/builds.txt'
 # How often you would like it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK = 0
