@@ -14,7 +14,7 @@
     
     <extension point="xbmc.addon.metadata">
         <summary lang="en">[COLOR limegreen][B]dojo[/B][/COLOR]streams</summary>
-        <description lang="en">[COLOR limegreen][B]Open[/B][/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <description lang="en">[COLOR limegreen][B]Dojo[/B][/COLOR]Streams Prepare for a journey into endless streams.. </description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <source>https://www.github.com/drinfernoo/plugin.program.openwizard/</source>
