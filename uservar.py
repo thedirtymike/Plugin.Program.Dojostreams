@@ -17,7 +17,7 @@ ADDONTITLE = '[COLOR limegreen][B]dojo[/B][/COLOR]streams'
 BUILDERNAME = 'dirtymike'
 EXCLUDES = [ADDON_ID, 'repository.openwizard']
 # Text File with build info in it.
-BUILDFILE = 'http://fieldstoneinspections.com/kodi/builds.txt'
+BUILDFILE = 'https://www.dropbox.com/s/r8kn4bfeul29o3u/builds.txt?raw=1'
 # How often you would like it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK = 0
@@ -94,13 +94,13 @@ AUTOUPDATE = 'Yes'
 #        Auto Install Repo If Not Installed             #
 #########################################################
 # Enable Auto Install 'Yes' or 'No'
-AUTOINSTALL = 'Yes'
+AUTOINSTALL = 'no'
 # Addon ID for the repository
 REPOID = 'repository.openwizard'
 # Url to Addons.xml file in your repo folder(this is so we can get the latest version)
-REPOADDONXML = 'https://raw.githubusercontent.com/drinfernoo/repository.openwizard/master/zips/addons.xml'
+REPOADDONXML = 'https://github.com/thedirtymike/plugin.program.dojostreams/blob/master/addon.xml'
 # Url to folder zip is located in
-REPOZIPURL = 'https://raw.githubusercontent.com/drinfernoo/repository.openwizard/master/zips/repository.openwizard/'
+REPOZIPURL = 'https://github.com/thedirtymike/plugin.program.dojostreams/tree/master/zips'
 #########################################################
 
 #########################################################
@@ -114,7 +114,7 @@ NOTIFICATION = 'http://'
 HEADERTYPE = 'Text'
 # Font size of header
 FONTHEADER = 'Font14'
-HEADERMESSAGE = '[COLOR limegreen][B]Open[/B][/COLOR]Wizard'
+HEADERMESSAGE = '[COLOR limegreen][B]Dojo[/B][/COLOR]Streams'
 # url to image if using Image 424x180
 HEADERIMAGE = 'http://'
 # Font for Notification Window
